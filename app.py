@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 from geopy.geocoders import Nominatim
 import json
-ee.authenticate()
+ee.Authenticate(auth_mode='notebook')
 geolocator = Nominatim(user_agent="geo_app")
 ee.Initialize()
 st.title("Enhanced Landsat Satellite Data Viewer")
